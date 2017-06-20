@@ -25,5 +25,14 @@ public class ViewFacade implements IView {
     public final void displayMessage(final String message) {
         JOptionPane.showMessageDialog(null, message);
     }
+    
+    public final String Mapping(final String message){
+    	return message;
+    }
+    
+
+    
+   
+    
 
 }
