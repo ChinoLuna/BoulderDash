@@ -13,6 +13,10 @@ public interface IView {
      *
      * @param message
      *            the message
+     * @return 
      */
     void displayMessage(String message);
+    
+    String Mapping(final String message);
+    
 }
