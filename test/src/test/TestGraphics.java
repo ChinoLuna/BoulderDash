@@ -12,7 +12,8 @@ public class TestGraphics extends JFrame implements ActionListener
 	protected static final TestGraphics TestGraphics = null;
 	JPanel utilBar = new JPanel();
     life lf = new life();
-
+	time tps = new time();
+    score scr = new score();
     int temps = 130;
     int score = 0;
     int life = 3;
@@ -21,9 +22,9 @@ public class TestGraphics extends JFrame implements ActionListener
     
     
    //JButton button = new JButton("Temps : "  + this.temps);
-    JLabel time = new JLabel("Time : " + this.temps);//cree les different information du HUD
+    JLabel time = new JLabel("Time : " + this.tps.getTemps());//cree les different information du HUD
     JLabel Diamond = new JLabel("Diamond : ");
-    JLabel Score = new JLabel("Score : " + this.score);
+    JLabel Score = new JLabel("Score : " + this.scr.getScore());
    JLabel Vie = new JLabel("Vie : " + lf.getLife());
 
     GraphicsPanel drawingArea = new GraphicsPanel();// creer l'ariere plan
@@ -69,10 +70,10 @@ public class TestGraphics extends JFrame implements ActionListener
 
     public static void main(String[]agrs) 
     {
+
     	time tps = new time();
         //life lf = new life();
         score scr = new score();
-        
         new TestGraphics();
         
         Thread t =  new Thread(tps);
