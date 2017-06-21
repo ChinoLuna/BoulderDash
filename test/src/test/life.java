@@ -1,36 +1,34 @@
 package test;
 
 public class life {
-	private int life = 1;
-	int v = 1 ;
 	
-	
-	public int life(){
-		for(life = 3; life >=  0; life--){
+	private int life = 3;
+		int v = 0 ;
+		
+	public life(){
+
+		
 			if (this.v  == 0){
 				this.life = life-1;
 
 
-				if (life==00){
+				if (life==0){
 					System.exit(0);
 				}
+				
 			}
-			return life;
+			System.out.println("life : " + this.life);
+				
+		return;
+		
+	}
+
+		public int getLife() {
+			return this.life;
 		}
-		return life;
 
-		
-
-		
-		
-	}
-
-	public int getLife() {
-		return life();
-	}
-
-	public void setLife(int life) {
-		this.life = life;
-	}
-
+		public void setLife(int life) {
+			this.life = life;
+		}
+	//}	
 }

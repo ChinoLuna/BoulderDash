@@ -1,6 +1,6 @@
 package test;
 
-import javax.swing.*;
+import javax.swing.*; 
 import javax.swing.JLabel;
 import java.awt.*;
 import java.awt.event.*;
@@ -11,20 +11,20 @@ public class TestGraphics extends JFrame implements ActionListener
    
 	protected static final TestGraphics TestGraphics = null;
 	JPanel utilBar = new JPanel();
-	//time tps = new time();
-    //life life = new life();
-    score scr = new score();
+    life lf = new life();
+
     int temps = 130;
     int score = 0;
+    int life = 3;
     
     
     
     
-   // JButton button = new JButton("Temps : "  + this.temps);
-    //JLabel time = new JLabel("Time : " + this.temps);//cree les different information du HUD
+   //JButton button = new JButton("Temps : "  + this.temps);
+    JLabel time = new JLabel("Time : " + this.temps);//cree les different information du HUD
     JLabel Diamond = new JLabel("Diamond : ");
     JLabel Score = new JLabel("Score : " + this.score);
-   // JLabel Vie = new JLabel("Vie : " + life.getLife());
+   JLabel Vie = new JLabel("Vie : " + lf.getLife());
 
     GraphicsPanel drawingArea = new GraphicsPanel();// creer l'ariere plan
  
@@ -38,26 +38,20 @@ public class TestGraphics extends JFrame implements ActionListener
         add(utilBar, BorderLayout.NORTH);
         utilBar.setLayout(new GridLayout(1, 4));
         
-       // JLabel label2 = new JLabel(String.);
-        //utilBar.add(button);
-        //utilBar.add(time);
+        //JLabel label2 = new JLabel();
+        utilBar.add(time);
         utilBar.add(Diamond);
         utilBar.add(Score);
-        //utilBar.add(Vie);
+        utilBar.add(Vie);
         
-       // button.setEnabled(true);
+      // button.setEnabled(true);
         
-       // TestGraphics selff = this;
+       TestGraphics selff = this;
 
-       /* button.addActionListener(new ActionListener(){
+        /*button.addActionListener(new ActionListener(){
         		public void actionPerformed(ActionEvent arg0){
-        			selff.temps = 0;
-        			
-        			Thread t = new Thread(){
-        				
-        			};
-        			t.start();
-        		}
+        			selff.temps = 0;       			
+        			};	
         	});*/
         
         add(drawingArea, BorderLayout.CENTER);
@@ -69,14 +63,35 @@ public class TestGraphics extends JFrame implements ActionListener
      
 	public void actionPerformed(ActionEvent e)//si il ya une action sur l'ariere plan
     {
-        //time.revalidate();
-		//time.repaint();
+        time.revalidate();
+		time.repaint();
     }
 
     public static void main(String[]agrs) 
     {
+    	time tps = new time();
+        //life lf = new life();
+        score scr = new score();
+        
         new TestGraphics();
+        
+        Thread t =  new Thread(tps);
+        Thread s = new Thread(scr);
+       // Thread l = new Thread(lf);
+
+        t.start();
+        s.start();
+        //l.start();
+
     }
+
+
+
+public void update (final Object temps, final Object score){
+	
+	this.repaint();
+	
+}
 }
 
 @SuppressWarnings("serial")
