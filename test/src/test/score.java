@@ -17,7 +17,7 @@ public class score implements Runnable {
 			this.scr = scr;
 		}
 		
-		int S = 4;
+		int S = 1;
 		int score =  0;
 		int a=1;
 		int b=2;
@@ -43,7 +43,7 @@ public class score implements Runnable {
 				System.exit(0);
 				}
 		if (S == 4){
-			this.score = score + (tp.tpf*10);
+			this.score = score + ((tp.tpf)*10);
 			System.out.println("score : " + this.score);
 			
 			

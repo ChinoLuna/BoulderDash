@@ -1,10 +1,11 @@
 package test;
 
+import javax.swing.RepaintManager;
 
 public class time implements Runnable {
     
     /*class timer{
-    	//int temps = 130;
+    	//int Times = 130;
         private int tpsfin = 0;
          
 		public void run() {}
@@ -15,7 +16,7 @@ public class time implements Runnable {
 	public time() {
 		this.tps = tps ;
 	}
-	int temps = 130;
+	int Times = 130;
 	int S = 1;
 	int tpf = 0;
 
@@ -23,21 +24,20 @@ public class time implements Runnable {
 	public void run() {
 
 		for (int i = 0; i < 130; i++) {
-			this.temps = temps-1;
-			System.out.println("temps : " + this.temps);
+			this.Times = Times-1;
+			System.out.println("Times : " + this.Times);
 			try {
 				Thread.sleep(1000);                 //1000 milliseconds is one second.
 				} catch(InterruptedException ex) {
 					Thread.currentThread().interrupt();
 				}
-			if (temps==00){
+			if (Times==00){
 				System.exit(0);
 				}
 			if (S==3){
-				System.out.println(temps);
-				tpf = temps;
+				System.out.println(Times);
+				tpf = Times;
 				System.exit(tpf);
-				
 			}
 			}
 				
@@ -54,13 +54,13 @@ public class time implements Runnable {
 	}
 
 
-	public int getTemps() {
-        return this.temps;
+	public int getTimes() {
+        return this.Times;
     }
  
  
-    public void setTemps(int temps) {
-        this.temps = temps;
+    public void setTimes(int Times) {
+        this.Times = Times;
     }
 
     }
