@@ -13,9 +13,12 @@ import java.sql.SQLException;
 import javax.imageio.ImageIO;
 import javax.swing.JButton;
 import javax.swing.JPanel;
+import javax.swing.JFrame;
+
 
 import controller.ControllerFacade;
 import model.ModelFacade;
+import view.Fenetre;
 
 public class Panneau extends JPanel{
 	
@@ -37,7 +40,7 @@ public class Panneau extends JPanel{
 	
 	public void paintComponent(Graphics g){
 		try {
-		      Image img = ImageIO.read(new File("Boulder.jpg"));
+		      Image img = ImageIO.read(new File("Sprites/Background/Boulder.jpg"));
 		      g.drawImage(img, 0, 0, this.getWidth(), this.getHeight(), this);
 		    } catch (IOException e) {
 		      e.printStackTrace();
@@ -61,9 +64,11 @@ public class Panneau extends JPanel{
 		public void actionPerformed(ActionEvent arg0){
 			map = 1;
 			try {
+				close();
 				controller.start(map);
 	        } catch (final SQLException exception) {exception.printStackTrace();}
 		}
+		
 	});
   	boutonMap1.setFont(font1);
   	boutonMap1.setForeground(Color.LIGHT_GRAY);
@@ -171,6 +176,11 @@ public class Panneau extends JPanel{
 	
   public Panneau(Fenetre fen) {
 		super();
+	}
+  public void close()
+	{
+		this.setVisible(false);
+			
 	}
 
 }

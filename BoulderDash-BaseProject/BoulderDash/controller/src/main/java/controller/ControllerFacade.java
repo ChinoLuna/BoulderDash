@@ -1,9 +1,9 @@
 package controller;
 
-import java.io.InputStream;
 import java.sql.SQLException;
 
 import model.IModel;
+//import view.FenetreJeu;
 import view.IView;
 
 
@@ -12,6 +12,7 @@ import view.IView;
  *
  * @author Jean-Aymeric DIET jadiet@cesi.fr
  * @version 1.0
+ * @param <FenetreJeu>
  */
 public class ControllerFacade implements IController {
 
@@ -44,10 +45,22 @@ public class ControllerFacade implements IController {
      */
 	public void start(int map) throws SQLException {
         //this.getView().displayMessage(this.getModel().getMapById(map).toString());
-        String LaMap = this.getView().Mapping(this.getModel().getMapById(map).toString());
-        char[] Map1D = LaMap.toCharArray();
+        String TheMap = this.getView().Mapping(this.getModel().getMapById(map).toString());
+        char Map1D[] = TheMap.toCharArray();
+        char Map2D[][] = new char [20][20];
         
-        System.out.println(LaMap);
+        for(int i = 0; i < 20; i++)
+        {        		
+        	for(int j = 0; j <20; j++)
+        	{   
+        		
+        		Map2D[i][j] = Map1D[(j*20)+i];
+        	}
+        }
+        
+
+    	//FenetreJeu lejeu = new FenetreJeu();
+    	
         
         
     }
