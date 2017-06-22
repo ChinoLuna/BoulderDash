@@ -28,14 +28,10 @@ public abstract class Main {
         	//Fenetre fenetreMenu = new Fenetre();
     		FenetreJeu leJeu = new FenetreJeu();
         	Time tps = new Time();
-            Score scr = new Score();
-           
-            
+        	
             Thread t =  new Thread(tps);
-            Thread s = new Thread(scr);
 
             t.start();
-            s.start();
     }
 
 }
