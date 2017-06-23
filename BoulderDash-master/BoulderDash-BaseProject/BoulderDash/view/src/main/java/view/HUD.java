@@ -1,6 +1,8 @@
 package view;
 
-import java.awt.BorderLayout; 
+import java.awt.BorderLayout;
+import java.awt.Button;
+import java.awt.Graphics;
 import java.awt.GridLayout;
 
 import javax.swing.JLabel;
@@ -16,22 +18,17 @@ public class HUD extends JPanel {
 	 */
 	private static final long serialVersionUID = 1L;
 	//JPanel utilBar = new JPanel();
-    Life lf = new Life();
 	Time tps = new Time();
-    Score scr = new Score();
-    int temps = 130;
-    int score = 0;
-    int life = 3;
-    int diamond=  12 ;
+    Score src = new Score();    
+    Diamonds dia = new Diamonds();
+    Life lf = new Life();
     
+  
     
-    
-    
-   //JButton button = new JButton("Temps : "  + this.temps);
     JLabel time = new JLabel("Time : " + this.tps.getTimes());//cree les different information du HUD
-    JLabel Diamond = new JLabel("Diamond : " +this.scr.getD());
-    JLabel Score = new JLabel("Score : " + this.scr.getScore());
-    JLabel Vie = new JLabel("Vie : " + lf.getLife());
+    JLabel Diamond = new JLabel("Diamond : " + dia.getD() );
+    JLabel Score = new JLabel("Score : " + this.src.getScore());
+    JLabel Vie = new JLabel("Vie : " + lf.getLife() );
  
     HUD(JPanel pan) //parametre de l'interface
     {   
@@ -44,10 +41,29 @@ public class HUD extends JPanel {
         this.add(Diamond);
         this.add(Score);
         this.add(Vie);
+
            
         this.setVisible(true);
         
     }
+    public void paintComponent(Graphics g1){
+    	super.paintComponent(g1);
+
+
+    
+    		//g1.drawString("Time : " + tps.getTimes(), 1, 12);
+        	
+    
+    	
+    	
+    }
+    
+    
+    public void updatelabel(){
+    	
+    	time.repaint();
+    }
+
      
 }
 

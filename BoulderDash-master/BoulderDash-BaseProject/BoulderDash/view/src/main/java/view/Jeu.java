@@ -80,13 +80,13 @@ public class Jeu extends JPanel{
         	System.out.println("");
         	
         }
-		HUD hud = new HUD(this);
 		
 		
 	}
 	
 	public Jeu(FenetreJeu fen) {
 		super();
+		new HUD(this);
 	}
 	
 	public void close()

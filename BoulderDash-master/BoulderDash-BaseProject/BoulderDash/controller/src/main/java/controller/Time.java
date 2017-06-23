@@ -2,20 +2,7 @@ package controller;
 
 
 public class Time implements Runnable {
-    
-    /*class timer{
-    	//int Times = 130;
-        private int tpsfin = 0;
-         
-		public void run() {}
-	}*/
-
-	private Time tps;
-
-	public Time() {
-		this.tps = tps ;
-	}
-	
+   
 	int Times = 130;
 	int S = 1;
 	int tpf = 0;
@@ -31,6 +18,7 @@ public class Time implements Runnable {
 				} catch(InterruptedException ex) {
 					Thread.currentThread().interrupt();
 				}
+			
 			if (Times==00){
 				System.exit(0);
 				}
@@ -39,6 +27,8 @@ public class Time implements Runnable {
 				tpf = Times;
 				System.exit(tpf);
 			}
+			
+
 			}
 				
 	}
@@ -55,7 +45,7 @@ public class Time implements Runnable {
 
 
 	public int getTimes() {
-        return this.Times;
+        return Times;
     }
  
  

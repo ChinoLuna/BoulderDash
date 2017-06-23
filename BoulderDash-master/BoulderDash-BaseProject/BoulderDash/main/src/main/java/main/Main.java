@@ -1,10 +1,8 @@
 package main;
 
-import java.io.IOException;
 
-import controller.Score;
+import java.io.IOException;
 import controller.Time;
-import view.Fenetre;
 import view.FenetreJeu;
 
 /**
@@ -23,15 +21,17 @@ public abstract class Main {
      */
 	
     public static void main(final String[] args) throws IOException, InterruptedException{
-     	
-        
         	//Fenetre fenetreMenu = new Fenetre();
+    	
+ 	
     		FenetreJeu leJeu = new FenetreJeu();
         	Time tps = new Time();
         	
             Thread t =  new Thread(tps);
 
             t.start();
+            
+            
     }
 
 }

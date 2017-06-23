@@ -28,7 +28,7 @@ public class FenetreJeu extends JFrame{
 	    this.setResizable(false);
 	    this.setLocationRelativeTo(null);
 	    this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE); 
-
+	    	    
 	    this.setContentPane(new Jeu(null));
 	    this.setVisible(true);
 	    
@@ -36,6 +36,7 @@ public class FenetreJeu extends JFrame{
 	    
 	    
 	}
+
 	
 }
 
