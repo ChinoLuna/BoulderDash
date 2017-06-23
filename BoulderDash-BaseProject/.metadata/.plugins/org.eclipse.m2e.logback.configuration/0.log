@@ -1,0 +1,46 @@
+2017-06-20 17:56:49,492 [Worker-1] INFO  c.g.t.t.d.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2017-06-20 17:57:15,499 [Worker-4] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using NULL lifecycle mapping for MavenProject: fr.exia:boulderdash:0.0.1-SNAPSHOT @ C:\Users\quent_000\BoulderDash\BoulderDash-BaseProject\BoulderDash\pom.xml.
+2017-06-20 17:57:16,233 [Worker-4] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: fr.exia:contract:0.0.1-SNAPSHOT @ C:\Users\quent_000\BoulderDash\BoulderDash-BaseProject\BoulderDash\contract\pom.xml.
+2017-06-20 17:57:16,306 [Worker-4] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: fr.exia:controller:0.0.1-SNAPSHOT @ C:\Users\quent_000\BoulderDash\BoulderDash-BaseProject\BoulderDash\controller\pom.xml.
+2017-06-20 17:57:16,409 [Worker-4] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: fr.exia:model:0.0.1-SNAPSHOT @ C:\Users\quent_000\BoulderDash\BoulderDash-BaseProject\BoulderDash\model\pom.xml.
+2017-06-20 17:57:16,495 [Worker-4] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: fr.exia:view:0.0.1-SNAPSHOT @ C:\Users\quent_000\BoulderDash\BoulderDash-BaseProject\BoulderDash\view\pom.xml.
+2017-06-20 17:57:16,601 [Worker-4] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: fr.exia:main:0.0.1-SNAPSHOT @ C:\Users\quent_000\BoulderDash\BoulderDash-BaseProject\BoulderDash\main\pom.xml.
+2017-06-20 17:57:17,906 [Worker-4] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /contract/src/main/java
+2017-06-20 17:57:17,907 [Worker-4] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /contract/src/test/java
+2017-06-20 17:57:18,729 [Worker-4] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /controller/src/main/java
+2017-06-20 17:57:18,730 [Worker-4] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /controller/src/test/java
+2017-06-20 17:57:18,828 [Worker-4] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /view/src/main/java
+2017-06-20 17:57:18,829 [Worker-4] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /view/src/test/java
+2017-06-20 17:57:18,930 [Worker-4] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /model/src/main/java
+2017-06-20 17:57:18,931 [Worker-4] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /model/src/test/java
+2017-06-20 17:57:19,040 [Worker-4] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /main/src/main/java
+2017-06-20 17:57:19,046 [Worker-4] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /main/src/test/java
+2017-06-20 17:57:19,134 [Worker-4] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Imported and configured 6 project(s) in 4 sec
+2017-06-20 17:57:20,494 [Worker-1] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-06-20 17:57:20,500 [Worker-1] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\quent_000\BoulderDash\BoulderDash-BaseProject\BoulderDash\contract\src\main\resources
+2017-06-20 17:57:20,507 [Worker-1] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-06-20 17:57:20,518 [Worker-1] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\quent_000\BoulderDash\BoulderDash-BaseProject\BoulderDash\contract\src\test\resources
+2017-06-20 17:57:20,611 [Worker-1] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-06-20 17:57:20,617 [Worker-1] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\quent_000\BoulderDash\BoulderDash-BaseProject\BoulderDash\controller\src\main\resources
+2017-06-20 17:57:20,623 [Worker-1] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-06-20 17:57:20,628 [Worker-1] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\quent_000\BoulderDash\BoulderDash-BaseProject\BoulderDash\controller\src\test\resources
+2017-06-20 17:57:20,851 [Worker-1] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-06-20 17:57:20,858 [Worker-1] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\quent_000\BoulderDash\BoulderDash-BaseProject\BoulderDash\model\src\main\resources
+2017-06-20 17:57:20,860 [Worker-1] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-06-20 17:57:20,868 [Worker-1] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\quent_000\BoulderDash\BoulderDash-BaseProject\BoulderDash\model\src\test\resources
+2017-06-20 17:57:20,955 [Worker-1] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-06-20 17:57:20,961 [Worker-1] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\quent_000\BoulderDash\BoulderDash-BaseProject\BoulderDash\view\src\main\resources
+2017-06-20 17:57:20,968 [Worker-1] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-06-20 17:57:20,974 [Worker-1] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\quent_000\BoulderDash\BoulderDash-BaseProject\BoulderDash\view\src\test\resources
+2017-06-20 17:57:21,064 [Worker-1] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-06-20 17:57:21,073 [Worker-1] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\quent_000\BoulderDash\BoulderDash-BaseProject\BoulderDash\main\src\main\resources
+2017-06-20 17:57:21,076 [Worker-1] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-06-20 17:57:21,084 [Worker-1] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\quent_000\BoulderDash\BoulderDash-BaseProject\BoulderDash\main\src\test\resources
+2017-06-20 18:00:17,923 [Worker-7] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-06-20 18:00:17,929 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\quent_000\BoulderDash\BoulderDash-BaseProject\BoulderDash\model\src\main\resources
+2017-06-20 18:00:17,937 [Worker-7] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-06-20 18:00:17,942 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\quent_000\BoulderDash\BoulderDash-BaseProject\BoulderDash\model\src\test\resources
+2017-06-20 18:00:38,982 [Worker-17] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-06-20 18:00:38,988 [Worker-17] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\quent_000\BoulderDash\BoulderDash-BaseProject\BoulderDash\model\src\main\resources
+2017-06-20 18:00:38,996 [Worker-17] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-06-20 18:00:39,006 [Worker-17] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\quent_000\BoulderDash\BoulderDash-BaseProject\BoulderDash\model\src\test\resources
